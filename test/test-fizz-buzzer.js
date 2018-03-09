@@ -11,7 +11,7 @@ describe('fizzBuzzer', function() {
 			['4'],
 			[true]
 		];
-		badInputs.forEach((input) => {
+		badInputs.forEach(function(input) {
 			expect(function() {
 				fizzBuzzer(input.num);
 			}).to.throw(Error);
@@ -26,7 +26,7 @@ describe('fizzBuzzer', function() {
 			{num: 15, expected: 'fizz-buzz'}
 		];
 
-		normalCases.forEach((input) => {
+		normalCases.forEach(function(input) {
 			const answer = fizzBuzzer(input.num);
 			expect(answer).to.equal(input.expected);
 		});
@@ -41,7 +41,7 @@ describe('fizzBuzzer', function() {
 		];
 
 
-		normalCases.forEach((input) => {
+		normalCases.forEach(function(input) {
 			const answer = fizzBuzzer(input.num);
 			expect(answer).to.equal(input.expected);
 		});
@@ -56,7 +56,7 @@ describe('fizzBuzzer', function() {
 		];
 
 
-		normalCases.forEach((input) => {
+		normalCases.forEach(function(input) {
 			const answer = fizzBuzzer(input.num);
 			expect(answer).to.equal(input.expected);
 		});
@@ -70,7 +70,7 @@ describe('fizzBuzzer', function() {
 			{num: 13, expected: 13} 
 		];
 
-		normalCases.forEach((input) => {
+		normalCases.forEach(function(input) {
 			const answer = fizzBuzzer(input.num);
 			expect(answer).to.equal(input.expected);
 		});
